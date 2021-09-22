@@ -2,9 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* height: 100vh; */
 }
 ::selection{
     background-color: transparent;
+}
+body{
+    background-image: linear-gradient(45deg, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.9)),
+    linear-gradient(45deg, rgba(255, 0, 0, 0.7),rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0.9)),
+    linear-gradient(-45deg, rgba(0, 0, 255, 0.9),rgba(0, 0, 255, 0.8),rgba(0, 0, 255, 0.7));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .container{
     padding: .5em 1em;
@@ -13,7 +22,7 @@
     width: 350px;
     margin: 2em auto;
     /* text-align: center; */
-    background-color: #573c3cc4;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: .5em;
     border-radius: .5em;
 }
@@ -22,6 +31,7 @@
     box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
     border-radius: .5em;
     padding: 1em;
+    background-color: rgba(245, 245, 220, 0.8);
 }
 .content-data-hora{
     display: flex;
@@ -44,9 +54,15 @@
     text-transform: uppercase;
     font-size: 1.5em;
     border: none;
-    box-shadow: 2px 3px 4px #00000080;
+    box-shadow: 2px 3px 3px #ffffff08;
     border-radius: .5em;
     cursor: pointer;
+    background-color: #000000e6;
+    color: #ffffff99;
+    transition-property: color;
+}
+.buttons button:hover{
+    color: white;
 }
 .btn-somar{
     grid-column: 4 / 5;
