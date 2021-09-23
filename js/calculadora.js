@@ -1,1 +1,4 @@
-window.calculadora = new CalcControler();
+(()=>{
+    "use strict";
+    const calculadora = new CalcControler();
+})()
